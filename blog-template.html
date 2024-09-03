@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="generator" content="pandoc" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=yes"
+		/>
+		<title>$title$</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="$relative_path$/reset.css" />
+		<link rel="stylesheet" href="$relative_path$/index.css" />
+		<link rel="stylesheet" href="$relative_path$/syntax-highlighting.css" />
+		<style>
+			.content {
+				visibility: hidden;
+			}
+			.content.loaded {
+				visibility: visible;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="sidebar">
+				<ul>
+					<li><a href="/" id="about">About</a></li>
+					<li><a href="/blog" id="blog">Blog</a></li>
+				</ul>
+			</nav>
+			<div class="blog-container">
+				<div class="blog-header">
+					<h1>$title$</h1>
+					<p>$date$</p>
+				</div>
+				<div class="content">$body$</div>
+			</div>
+		</div>
+		<script src="$relative_path$/index.js"></script>
+	</body>
+</html>
